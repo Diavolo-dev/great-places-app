@@ -63,7 +63,9 @@ class _ImageInputState extends State<ImageInput> {
           child: TextButton.icon(
             icon: Icon(Icons.camera),
             label: Text('Take Picture'),
-            textColor: Theme.of(context).primaryColor,
+            style: TextButton.styleFrom(
+              primary: Theme.of(context).primaryColor,
+            ),
             onPressed: _takePicture,
           ),
         ),
